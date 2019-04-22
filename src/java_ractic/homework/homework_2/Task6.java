@@ -1,6 +1,7 @@
-package Java_Practic.HomeWork.HomeWork2;
+package java_ractic.homework.homework_2;
 
 public class Task6 {
+
     public static void main(String[] args) {
         char slash = 92;
         String a = "It's Windows path: C:" + slash + "Program";
