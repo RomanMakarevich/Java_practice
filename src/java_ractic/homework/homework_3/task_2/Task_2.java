@@ -7,6 +7,9 @@ public class Task_2 {
     public static void main(String[] args) {
         float numberA = 1.2F;
         float numberB = 1.4F;
+        
+        // у тебя дальше идет верное решение через BigDecimal, соот-но такое надо убирать, код должен быть чистым
+        // если хотел оставить себе как конспект, то коммент делай что складывать числа с точкой можно только через BigDecimal
         float sumFloat = numberA + numberB;
         System.out.println("sumFloat = " + sumFloat);
 
