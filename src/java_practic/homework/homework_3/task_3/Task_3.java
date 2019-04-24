@@ -22,5 +22,12 @@ public class Task_3 {
             }
         }
                 System.out.println(array);
+        question = question.replace('a', 'e');
+        question = question.replace('+' , '?');
+        System.out.println(question);
+
+        
+
+
     }
 }

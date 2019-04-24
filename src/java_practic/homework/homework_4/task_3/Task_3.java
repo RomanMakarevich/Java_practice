@@ -26,10 +26,7 @@ public class Task_3 {
         for (int i = 0; i < arrayA.length; i++) {
             arrayA[i] = random.nextInt(size + 1);
             if ((arrayA[i] % 2) == 0) {
-
                     sizeArrayB++;
-
-
             }
             System.out.print(arrayA[i] + ", ");
         }

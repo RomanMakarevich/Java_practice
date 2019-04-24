@@ -9,6 +9,7 @@ public class Program2 {
         Random random = new Random ();
         int max  = 10;
         int min = 1;
+
         for (int i =0; i<array.length; i++){
             array[i] = random.nextInt((max - min) + 1) + min;
         }

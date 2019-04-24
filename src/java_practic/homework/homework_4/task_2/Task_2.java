@@ -43,11 +43,12 @@ public class Task_2 {
         if (mediumA > mediumB){
             System.out.println("mediumA > mediumB");
         }
+
+        else if (mediumA == mediumB){
+            System.out.println("mediumA == mediumB");
+        }
         else{
             System.out.println("mediumA < mediumB");
-        }
-        if (mediumA == mediumB){
-            System.out.println("mediumA == mediumB");
         }
     }
 }
