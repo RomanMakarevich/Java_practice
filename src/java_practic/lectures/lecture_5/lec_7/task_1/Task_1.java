@@ -1,7 +1,7 @@
-package java_practic.lectures.lecture_5;
+package java_practic.lectures.lecture_5.lec_7.task_1;
 import java.util.Scanner;
 
-public class Task_1_1 {
+public class Task_1 {
     public static void main(String[] args) {
                 String name;
         Scanner in = new Scanner(System.in);
