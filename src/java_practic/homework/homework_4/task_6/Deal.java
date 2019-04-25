@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class Deal {
     public static void main(String[] args) {
-//
         Scanner sc = new Scanner(System.in);
         int numberOfPlayers = 11;
 
