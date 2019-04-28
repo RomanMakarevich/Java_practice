@@ -10,7 +10,10 @@ public class Task_1 {
 
 
 
-
+/*
+1. метод должен выполнять только 1 конкретное действие. Нельзя все внутрь. Твой метод должен принять вопрос
+проверить его на знак вопроса и вернуть true/false остальное надо вынести в другой или оставить в методе main
+*/
     static  void question() {
 
         Random random = new Random();
@@ -20,6 +23,7 @@ public class Task_1 {
         char [] array = question.toCharArray();
 
         boolean marker = false;
+        // знак вопроса должен стоять в конце, у строки есть метод charAt() используй его
         for (int i = 0; i < array.length; i++){
             if (array[i] == '?'){
                 marker = true;
@@ -33,11 +37,8 @@ public class Task_1 {
         }
         else {
             System.out.println("The question is not clear, ask again.");
+            // рекурсия здесь плоха. если часто вводить неверный вопрос, то программа выдаст исключение (ошибку)
             question();
         }
-
-
-
-
     }
 }
