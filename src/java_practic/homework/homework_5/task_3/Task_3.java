@@ -1,28 +1,38 @@
 package java_practic.homework.homework_5.task_3;
 
+import java.util.Scanner;
+
 public class Task_3 {
     public static void main(String[] args) {
-        int number = 0;
 
+        Scanner scanner = new Scanner(System.in);
+
+        int[] array = new int[5];
+        System.out.println("Enter 5 numbers:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.printf("Number %d: ", i+1);
+            array[i] = scanner.nextInt();
+        }
+        int number = 0;
         // как-то не очень отформатировано, используй меню code(вверху)->reformat code
-recursion(number);
+        recursion(number, array);
     }
 
     // int замени на void, зачем нам что-то возвращать в данном задании?
-    static int recursion (int number){
+    static void recursion(int number, int[] array) {
 
-        // массив надо передавать аргументом
-        int[] array = {1,25,465,32,100};
-
-        if (number < array.length){
+        if (number < array.length) {
             // 1, 25, 465, 32, 100, 
             // это твой вывод, где-то есть лишняя запятая. Надо убрать
-            System.out.print(array[number] + ", ");
-            return recursion(number +1);
+            System.out.print(array[number]);
+
+            if (number < array.length-1){
+                System.out.print(", ");
+            }else {
+                System.out.print(".");
+            }
+            recursion(number + 1, array);
         }
-        else {
-            return 0;
-        }
+
     }
-// пустую строку надо убрать
 }

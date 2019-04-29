@@ -16,7 +16,8 @@ public class Task_4 {
         int year = scanner.nextInt();
         
         System.out.println("Enter your area:");
-        String area = scanner.nextLine(); //я не понимаю, почему с переменной "name" scanner.nextLine сработала, а тут эту процедуру просто пропускает.
+        scanner.nextLine();
+        String area = scanner.nextLine();
         myMetod(name, age, year, area);
 
     }
