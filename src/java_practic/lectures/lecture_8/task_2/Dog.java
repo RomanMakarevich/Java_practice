@@ -4,6 +4,22 @@ public class Dog extends Animal{
     private int lengthTail;
     private int numberOfTeeth;
 
+    public void setLengthTail(int lengthTail) {
+        this.lengthTail = lengthTail;
+    }
+
+    public int getLengthTail() {
+        return lengthTail;
+    }
+
+    public void setNumberOfTeeth(int numberOfTeeth) {
+        this.numberOfTeeth = numberOfTeeth;
+    }
+
+    public int getNumberOfTeeth() {
+        return numberOfTeeth;
+    }
+
     public Dog (int lengthTail, int numberOfTeeth, String name, int age, String kind){
         super(name,age,kind);
         this.lengthTail = lengthTail;

@@ -4,6 +4,22 @@ public class Horse extends Animal {
     private int height;
     private boolean wearsHorseShoe;
 
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setWearsHorseShoe(boolean wearsHorseShoe) {
+        this.wearsHorseShoe = wearsHorseShoe;
+    }
+
+    public boolean getWearsHorseShoe() {
+        return wearsHorseShoe;
+    }
+
     public Horse(int height, boolean wearsHorseShoe, String name, int age, String kind){
         super (name,age,kind);
         this.height = height;
