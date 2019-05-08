@@ -3,7 +3,18 @@ package java_practic.homework.homework_6.task_1;
 public class Car {
 
     private String brand;
+    // engine - должен быть класс Engine, внутри которого методы заглушить и завести
     private boolean engine;
+    //тоже отдельный класс Transmission, а уже внутри класса Car переменная
+    // private Transmission transmission;
+
+    // и Engine и Transmission лучше передать через конструктор, т.е.
+    /*
+    public Car (Engine engine, Transmission transmission){
+     this.transmission = transmission;
+     this.engine = engine;
+    }
+    */
     private int transmission;
     private int speed;
 
