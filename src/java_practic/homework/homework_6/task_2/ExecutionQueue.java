@@ -1,6 +1,7 @@
 package java_practic.homework.homework_6.task_2;
 
 public class ExecutionQueue {
+    // верно, только не 'asg', а 'msg' переменная называлась в примере 
     private static String asg;
 
     static {
@@ -8,6 +9,7 @@ public class ExecutionQueue {
     }
 
     {
+        // blocK
         asg = "regular init bloc";//стоит вторым в приоритете выполнения.
     }
 
