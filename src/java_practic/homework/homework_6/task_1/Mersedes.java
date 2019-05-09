@@ -2,38 +2,42 @@ package java_practic.homework.homework_6.task_1;
 
 public class Mersedes {
     public static void main(String[] args) {
-        Car mersedes = new Car("Mersedess");
+        Engine mersedesEengine = new Engine();
+        Transmission mersedesTransmission = new Transmission();
+        Car mersedes = new Car("Mersedes", mersedesEengine, mersedesTransmission);
 
         mersedes.gasPedalOn();
-        mersedes.engineOn();
-        mersedes.gasPedalOn();
+        mersedesEengine.engineOn();
 
-        mersedes.transmissionUp();
         mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
-        mersedes.transmissionUp();
         mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
-        mersedes.transmissionUp();
         mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
-        mersedes.transmissionUp();
         mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
-        mersedes.transmissionUp();
         mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
-        mersedes.transmissionUp();
         mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
-        mersedes.transmissionUp();
         mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
-        mersedes.transmissionUp();
+        mersedes.gasPedalOn();
+        mersedesTransmission.transmissionUp();
 
         mersedes.stop();
-        mersedes.engineOff();
-        System.out.println("Number of transmission - " + mersedes.getTransmission());
+
+        System.out.println("Number of transmission -" + mersedes.getTransmission().getTransmission());
         System.out.println("Speed = " + mersedes.getSpeed());
+
+        mersedesEengine.engineOff();
     }
 }

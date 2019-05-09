@@ -4,9 +4,10 @@ public class Car {
 
     private String brand;
     // engine - должен быть класс Engine, внутри которого методы заглушить и завести
-    private boolean engine;
+    private Engine engineStatus;
     //тоже отдельный класс Transmission, а уже внутри класса Car переменная
     // private Transmission transmission;
+    private Transmission transmission;
 
     // и Engine и Transmission лучше передать через конструктор, т.е.
     /*
@@ -15,7 +16,7 @@ public class Car {
      this.engine = engine;
     }
     */
-    private int transmission;
+
     private int speed;
 
     public String getBrand() {
@@ -26,66 +27,33 @@ public class Car {
         this.brand = brand;
     }
 
-    public boolean getEngine() {
-        return engine;
-    }
-
-    public int getTransmission() {
-        return transmission;
-    }
-
     public int getSpeed() {
         return speed;
     }
 
+    public Engine getEngineStatus() {
+        return engineStatus;
+    }
+
+    public Transmission getTransmission() {
+        return transmission;
+    }
+
     {
-        engine = false;
-        transmission = 0;
         speed = 0;
-
     }
 
-    public Car(String brand) {
+    public Car(String brand, Engine engineStatus, Transmission transmission) {
         this.brand = brand;
-    }
-
-    public void engineOn() {
-        if (engine == false) {
-            engine = true;
-        } else {
-            System.out.println("Action is not available, engine - On.");
-        }
-    }
-
-    public void engineOff() {
-        if (engine == true) {
-            engine = false;
-        } else {
-            System.out.println("Action is not available, engine - Off.");
-        }
-    }
-
-    public void transmissionUp() {
-        if (transmission < 7) {
-            transmission++;
-        } else {
-            System.out.println("Maximum transmission reached");
-        }
-    }
-
-    public void transmissionDown() {
-        if (transmission > 0) {
-            transmission--;
-        } else {
-            System.out.println("Minimum transmission reached");
-        }
+        this.engineStatus = engineStatus;
+        this.transmission = transmission;
     }
 
     public void gasPedalOn() {
-        if (engine == true) {
-            if (0 < transmission) {
-                speed = transmission * 20;
-                System.out.printf("Speed = %d\nNumber of transmission - %d\n", speed, transmission);
+        if (engineStatus.getEngineStatus() == true) {
+            if (0 < transmission.getTransmission()) {
+                speed = transmission.getTransmission() * 20;
+                System.out.printf("Speed = %d\nNumber of transmission - %d\n", speed, transmission.getTransmission());
             } else {
                 System.out.println("It's impossible. Check the transmission.");
             }
@@ -95,9 +63,9 @@ public class Car {
     }
 
     public void stop() {
-        while (transmission > 0) {
-            transmissionDown();
-            speed = transmission * 20;
+        while (transmission.getTransmission() > 0) {
+            transmission.transmissionDown();
+            speed = transmission.getTransmission() * 20;
         }
     }
 }
