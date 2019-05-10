@@ -4,6 +4,8 @@ public class Car {
 
     private String brand;
     // engine - должен быть класс Engine, внутри которого методы заглушить и завести
+    
+    // просто private Engine engine; У самого двигателя есть статус, но переменную так называть будет некорректно
     private Engine engineStatus;
     //тоже отдельный класс Transmission, а уже внутри класса Car переменная
     // private Transmission transmission;
@@ -38,7 +40,8 @@ public class Car {
     public Transmission getTransmission() {
         return transmission;
     }
-
+// сначала в классе должны быть блоки инициализации, затем конструкторы, затем публичные методы и затем приватные
+    // Это просто такое общее правило размещения
     {
         speed = 0;
     }
@@ -49,9 +52,14 @@ public class Car {
         this.transmission = transmission;
     }
 
+    // 
     public void gasPedalOn() {
         if (engineStatus.getEngineStatus() == true) {
+            //getTransmission - этот метод должен вызываться у того, у чего есть трансмиссия, т.е. в у машины
+            // а не у самой трансмиссии. Если ты имел ввиду передачу, то переименуй метод
+            // 0 - вынеси в отдельную переменную и назови, не должно быть таких непонятных чисел
             if (0 < transmission.getTransmission()) {
+                // тоже самое. переименуй методе
                 speed = transmission.getTransmission() * 20;
                 System.out.printf("Speed = %d\nNumber of transmission - %d\n", speed, transmission.getTransmission());
             } else {
