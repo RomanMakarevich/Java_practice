@@ -1,4 +1,9 @@
+//перед повторной отправкой на проверку удалять твои комментарии или оставлять,
+//чтобы удобно было посмотреть в чём был косяк в прошлы раз?
+
 package java_practic.homework.homework_6.task_1;
+
+import java.util.Scanner;
 
 public class Mersedes {
     public static void main(String[] args) {
@@ -10,38 +15,54 @@ public class Mersedes {
         // далее, скорее всего метод для увеличения скорости долже называться speedUp(), а не gasPedalOn()
         // в целом неплохо, попробуй сделать интерактивное дествие с пользователем,
         // т.е. через Scanner получать команды, для увеличения скорости, остановки и т.д.
-        mersedes.gasPedalOn();
-        mersedesEengine.engineOn();
 
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
+        Scanner scanner = new Scanner(System.in);
+        String command = new String();
+        boolean forComparison = true;
 
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
+        System.out.println("Enter command.\nYou can use: engine start, engine stop, gas, transmission up, transmission down,\nstop, show speed, show number of transmission, end.");
 
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
+        while ((command.equals("end")) != forComparison){
+            System.out.println("command: ");
+            command = scanner.nextLine();
 
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
+            if (command.equals("engine start")){
+                mersedesEengine.engineOn();
+                continue;
+            }
+            if (command.equals("engine stop")){
+                mersedesEengine.engineOff();
+                continue;
+            }
+            if (command.equals("gas")){
+                mersedes.gasPedalOn();
+                continue;
+            }
+            if (command.equals("transmission up")){
+                mersedesTransmission.transmissionUp();
+                continue;
+            }
+            if (command.equals("transmission down")){
+                mersedesTransmission.transmissionDown();
+                continue;
+            }
+            if (command.equals("stop")){
+                mersedes.stop();
+                continue;
+            }
+            if (command.equals("show speed")){
+                System.out.println("Speed = " + mersedes.getSpeed());
+                continue;
+            }
+            if (command.equals("show number of transmission")){
+                System.out.println("number of transmission - " + mersedesTransmission.getNumberOfTransmission());
+                continue;
+            }
+            if (command.equals("end")){
+                continue;
+            }
 
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
-
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
-
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
-
-        mersedes.gasPedalOn();
-        mersedesTransmission.transmissionUp();
-
-        mersedes.stop();
-
-        System.out.println("Number of transmission -" + mersedes.getTransmission().getTransmission());
-        System.out.println("Speed = " + mersedes.getSpeed());
-
-        mersedesEengine.engineOff();
+            System.out.println("Unknown command");
+        }
     }
 }
