@@ -36,6 +36,7 @@ public class Converter implements InterfaceConverter {
 
     @Override
     public double usd(int sum, double usd) {
+        //зачем тут скобки?
         return (sum * usd);
     }
 
