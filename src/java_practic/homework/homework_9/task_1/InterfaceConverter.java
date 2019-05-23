@@ -1,5 +1,6 @@
 package java_practic.homework.homework_9.task_1;
 
+//лучше назвать IConverter
 public interface InterfaceConverter {
     public void converter();
     public double usd(int sum, double usd);
