@@ -50,6 +50,7 @@ public class Converter implements InterfaceConverter {
         return sum / rus;
     }
 
+    //enum должен быть в отдельном классе
     enum Currency {
         USD,
         EUR,
