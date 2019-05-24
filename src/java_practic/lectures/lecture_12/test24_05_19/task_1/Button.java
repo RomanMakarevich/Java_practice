@@ -12,6 +12,6 @@ public class Button implements EventHandler {
     }
 
     public void click(){
-        execute();
+        eventHandler.execute();
     }
 }
