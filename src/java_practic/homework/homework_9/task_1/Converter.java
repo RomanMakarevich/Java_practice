@@ -2,7 +2,7 @@ package java_practic.homework.homework_9.task_1;
 
 import java.util.Scanner;
 
-public class Converter implements InterfaceConverter {
+public class Converter implements IConverter {
 
     private int id;
     private int sum;
@@ -36,8 +36,7 @@ public class Converter implements InterfaceConverter {
 
     @Override
     public double usd(int sum, double usd) {
-        //зачем тут скобки?
-        return (sum * usd);
+        return sum * usd;
     }
 
     @Override
@@ -48,12 +47,5 @@ public class Converter implements InterfaceConverter {
     @Override
     public double rus(int sum, double rus) {
         return sum / rus;
-    }
-
-    //enum должен быть в отдельном файле
-    enum Currency {
-        USD,
-        EUR,
-        RUS
     }
 }
