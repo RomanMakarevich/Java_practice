@@ -6,15 +6,16 @@ public class Task_2<I> {
 
     public static <T extends Number> double sum(T[] array){
         double sum = 0;
+
         for (int i = 0; i < array.length;i++){
-            sum += (double)array[i];
+            sum += array[i].doubleValue();
         }
         return sum;
     }
     public  static <T extends Number> double medium (T[] array){
         double sum = 0;
         for (int i = 0; i < array.length;i++){
-            sum += (double)array[i];
+            sum += array[i].doubleValue();
         }
         double medium = sum/array.length;
         return medium;

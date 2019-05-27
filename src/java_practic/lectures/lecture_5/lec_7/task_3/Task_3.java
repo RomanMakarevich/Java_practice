@@ -35,11 +35,11 @@ public class Task_3 {
         if ((numberThree != 0)|(numberFour != 0)) {
 
             double sum = sum(numberOne, numberTwo, numberThree, numberFour);
-            System.out.printf("Sum = %.2f", sum);
+            System.out.printf("SumArray = %.2f", sum);
         }
         else {
             int sum = sum(numberOne, numberTwo);
-            System.out.printf("Sum = %f", sum);
+            System.out.printf("SumArray = %f", sum);
         }
 
     }
