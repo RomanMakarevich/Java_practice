@@ -29,6 +29,7 @@ public class Book implements Cloneable {
         this.author.setNameAuthor(author);
     }
 
+    // конструктор лучше чтобы находился сразу после полей класса
     public Book(String name, int age, String author){
         this.name = name;
         this.age = age;
