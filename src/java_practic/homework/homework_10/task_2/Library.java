@@ -4,6 +4,7 @@ public class Library implements Cloneable{
     private Book book;
     private Magazine magazine;
 
+    // не ошибка, но Book и Magazine можно передавать сразу в конструктор
     public Library(String nameBook, int ageBook, String authorBook, String nameMagazine, int ageMagazine, String authorMagazine){
         this.book = new Book(nameBook, ageBook, authorBook);
         this.magazine = new Magazine(nameMagazine, ageMagazine, authorMagazine);
