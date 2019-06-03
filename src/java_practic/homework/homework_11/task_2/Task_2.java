@@ -12,7 +12,9 @@ public class Task_2 {
         students.add("makarevich");
         students.add("makarevich");
 
+        // не стоит в названии указывать реализацию studentsHashMap. Просто students, максимум studentsMap
         HashMap < String, Integer> studentsHashMap = new HashMap<>();
+        // temp - некорректное имя переменной, лучше student
         for (String temp : students){
             if (studentsHashMap.containsKey(temp)){
                 Integer number = studentsHashMap.get(temp);
