@@ -1,5 +1,6 @@
 package java_practic.homework.homework_11.task_3;
 
+// class Building implements Comparable<Build>{
 public class Building {
     private String street;
     private  int entrance;
@@ -33,4 +34,15 @@ public class Building {
         sb.append('}');
         return sb.toString();
     }
+    
+    //    @Override
+//    public int compareTo(Build a, Build b) {
+//        int comparedStreet = a.getStreet().compareTo(b.getStreet());
+//
+//        if(comparedStreet != 0) {
+//            return comparedStreet;
+//        }
+//
+//        return Integer.compare(a.getHousNumber(), b.getHousNumber());
+//    }
 }
