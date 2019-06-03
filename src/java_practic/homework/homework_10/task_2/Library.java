@@ -12,7 +12,7 @@ public class Library implements Cloneable{
 
     @Override
     // сделай метод паблик, чтобы можно было клонировать объект за пределами пакета
-    protected Library clone() throws CloneNotSupportedException {
+    public Library clone() throws CloneNotSupportedException {
         Library newLibrary = (Library)super.clone();
         newLibrary.book = (Book)super.clone();
         newLibrary.magazine = (Magazine) super.clone();

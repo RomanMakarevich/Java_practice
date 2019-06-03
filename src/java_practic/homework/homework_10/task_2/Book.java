@@ -37,7 +37,7 @@ public class Book implements Cloneable {
     }
 
     @Override
-    protected Book clone() throws CloneNotSupportedException {
+    public Book clone() throws CloneNotSupportedException {
         Book newBook = (Book) super.clone();
         newBook.author = (Author) super.clone();
         return newBook;

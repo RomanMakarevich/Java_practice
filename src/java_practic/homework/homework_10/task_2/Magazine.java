@@ -35,7 +35,7 @@ public class Magazine implements Cloneable {
     }
 
     @Override
-    protected Magazine clone() throws CloneNotSupportedException {
+    public Magazine clone() throws CloneNotSupportedException {
         Magazine newMagazine = (Magazine) super.clone();
         newMagazine.author = (Author) super.clone();
         return newMagazine;
