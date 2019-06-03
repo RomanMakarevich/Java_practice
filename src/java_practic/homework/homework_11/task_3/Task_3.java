@@ -15,6 +15,9 @@ public class Task_3 {
 
         System.out.println(buildings);
 
+        /* посмотри как я предложил сделать в классе Building. Так гораздо удобнее + тебе не понадобится каждый раз передавать 
+        comparator.
+        */
         TreeSet <Building> buildingTreeSet = new TreeSet<>(bcomp);
         buildingTreeSet.addAll(buildings);
 
