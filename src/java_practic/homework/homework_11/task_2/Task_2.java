@@ -13,16 +13,16 @@ public class Task_2 {
         students.add("makarevich");
 
         // не стоит в названии указывать реализацию studentsHashMap. Просто students, максимум studentsMap
-        HashMap < String, Integer> studentsHashMap = new HashMap<>();
+        HashMap < String, Integer> studentsMap = new HashMap<>();
         // temp - некорректное имя переменной, лучше student
-        for (String temp : students){
-            if (studentsHashMap.containsKey(temp)){
-                Integer number = studentsHashMap.get(temp);
-                studentsHashMap.put(temp, ++number);
+        for (String student : students){
+            if (studentsMap.containsKey(student)){
+                Integer number = studentsMap.get(student);
+                studentsMap.put(student, ++number);
             }else {
-                studentsHashMap.put(temp, 1);
+                studentsMap.put(student, 1);
             }
         }
-        System.out.println(studentsHashMap);
+        System.out.println(studentsMap);
     }
 }

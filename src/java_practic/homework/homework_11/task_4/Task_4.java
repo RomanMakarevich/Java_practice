@@ -14,8 +14,8 @@ public class Task_4 {
 
         System.out.println(numbers);
 
-//      numbers = (TreeSet<Integer>) numbers.descendingSet();
-        NavigableSet <Integer> numbers1 = numbers.descendingSet();
-        System.out.println(numbers1);
+        numbers = (TreeSet<Integer>) numbers.descendingSet();
+
+        System.out.println(numbers);
     }
 }

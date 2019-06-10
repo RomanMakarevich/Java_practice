@@ -14,7 +14,8 @@ public class Task_1 {
 
         // Не ошибка, но если посмотреть конструктор HashSet(),то там вызывается метод addAll(), в котором через итератор добавляются элементы
        
-        HashSet <String> uniqueWords = new HashSet<String>(words);
+        HashSet <String> uniqueWords = new HashSet<String>();
+        uniqueWords.addAll(words);
 
         System.out.println(uniqueWords);
     }
