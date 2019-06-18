@@ -2,6 +2,7 @@ package java_practic.homework.homework_12.task_1;
 
 import java.io.*;
 
+// Общее по задаче - ты записал текст в другой файл, а нужно было заменить его в первом. Но временный файл нам все же понадобится
 public class Task_1 {
     // private static final String INPUT_FILE_PATH
     private static final String TEXT_PATH = "D:\\Java_Practice\\src\\java_practic\\homework\\homework_12\\task_1\\Text";
