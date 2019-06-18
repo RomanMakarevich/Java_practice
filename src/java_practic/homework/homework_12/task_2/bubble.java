@@ -1,5 +1,6 @@
 package java_practic.homework.homework_12.task_2;
 
+// Bubble
 public class bubble {
     public static void main(String[] args) {
         int[] array = {4,8,16,9,2};
