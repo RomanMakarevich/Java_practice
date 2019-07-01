@@ -32,13 +32,13 @@ public class SuperMarket {
 
     public synchronized void punching() {
 
-        while (!turn.isEmpty()) {
+        if (!turn.isEmpty()) {
             HashMap<String, Integer> buf = new HashMap();
             buf.putAll(turn.get(0));
             System.out.printf("Till %d sall off %s\n", Thread.currentThread().getId(), buf.toString());
             turn.remove(0);
 
-            if (buf.get("apple") == null){
+            /*if (buf.get("apple") == null){
                 continue;
             }
             apple -= (buf.get("apple"));
@@ -51,7 +51,7 @@ public class SuperMarket {
             if (buf.get("bread") == null){
                 continue;
             }
-            bread -= (buf.get("bread"));
+            bread -= (buf.get("bread"));*/
         }
     }
 

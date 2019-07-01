@@ -18,11 +18,11 @@ public class Main {
         }
 
         Till till = new Till(superMarket);
-        for (int i = 0; i < 2; i++) {
-            Thread cashier1 = new Thread(till);
-            cashier1.start();
+        for (int i = 0; i < 3; i++) {
+            Thread cashier = new Thread(till);
+            cashier.start();
             try {
-                cashier1.join();
+                cashier.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
