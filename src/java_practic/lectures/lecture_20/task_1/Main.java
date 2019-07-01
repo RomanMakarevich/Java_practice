@@ -5,6 +5,7 @@ import java.util.function.Function;
 public class Main {
     public static void main(String[] args) {
         int number = 5;
+        // Function<Integer, String> func = number -> number + " BYN";
         Function<Integer, String> rubl = number1 -> {
             String result =  number + " BYN";
             return result;
