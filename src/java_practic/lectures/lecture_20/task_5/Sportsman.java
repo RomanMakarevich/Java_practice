@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 public class Sportsman{
     private int speed;
+    // int name? может стоит переименовать переменную?
     private int name;
-    private HashMap<Integer
-            , Medals> medals;
+    private HashMap<Integer, Medals> medals;
 
     public int getSpeed() {
         return speed;
@@ -33,6 +33,8 @@ public class Sportsman{
         this.medals.put(number, medals);
     }
 
+    // конструктор в начало класса, после описания полей
+    // сюда же в конструктор передай скорость
     public Sportsman(int name) {
         this.speed = 0;
         this.name = name;
