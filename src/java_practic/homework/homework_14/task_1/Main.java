@@ -1,7 +1,10 @@
 package java_practic.homework.homework_14.task_1;
 
 import java.util.Random;
-
+/*
+1. зачем кораблю поля порт и тоннель? этим должен управлять кто-то из вне, но точно не корабль
+2. Сделай так, чтобы было видно, что корабль проплыл тоннель, а не просто зашел в него (очень похоже на consumer-producer задачу)
+*/
 public class Main {
     public static void main(String[] args) {
 
