@@ -6,6 +6,7 @@ public class Port {
     private Semaphore semaphorePort;
 
     public Port() {
+        // 5, true - передавай через конструктор,
         semaphorePort = new Semaphore(5, true);
     }
 
