@@ -10,7 +10,7 @@ public class Task_1 {
         System.out.printf("%s, %s, %d", name, author, year);
 
         Book sun = new Book(1236);
-        //String sunName = sun.getName();
+        //String sunName = sun.getWord();
         //System.out.println("\n"+sunName);
         String sunName = sun.setName("Sun");
         System.out.printf("\n" + sunName);

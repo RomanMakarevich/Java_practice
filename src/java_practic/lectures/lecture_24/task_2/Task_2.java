@@ -1,6 +1,6 @@
-package java_practic.lectures.lecture_23.task_1;
+package java_practic.lectures.lecture_24.task_2;
 
-public class Task_1 {
+public class Task_2 {
     public static void main(String[] args) {
         int[] arrayFirst = {1, 3, 4, 6, 9, 11};
         int[] arraySecond = {2, 4, 7, 8, 12, 15, 20};
@@ -9,7 +9,7 @@ public class Task_1 {
 
         for (int i = 0; i < arraySecond.length; i++) {
             if (i < arrayFirst.length){
-            newArray[i] = arrayFirst[i];}
+                newArray[i] = arrayFirst[i];}
             newArray[arrayFirst.length + i] = arraySecond[i];
         }
         boolean isSorted = false;
@@ -19,10 +19,10 @@ public class Task_1 {
             for (int i = 0; i < newArray.length - 1; i++){
 
                 if (newArray[i] > newArray[i+1]){
-                   buf = newArray[i+1];
-                   newArray[i+1] = newArray[i];
-                   newArray[i] = buf;
-                   isSorted = false;
+                    buf = newArray[i+1];
+                    newArray[i+1] = newArray[i];
+                    newArray[i] = buf;
+                    isSorted = false;
                 }
             }
         }
