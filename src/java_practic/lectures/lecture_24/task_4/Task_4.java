@@ -2,11 +2,18 @@ package java_practic.lectures.lecture_24.task_4;
 
 import java.util.*;
 
+/*
+сделай коллекцию с темами, можешь сделать несколько коллекций с фруктами, для каждой темы своя коллекция
+затем берешь рандомный индекс коллекции тем и идешь в нужную коллекцию фруктов, а оттуда рандомом любой элемент
+Получится некая имитация базы данных
+*/
 public class Task_4 {
     public static void main(String[] args) {
 
         PutInMap putInMap = new PutInMap();
         Random random = new Random();
+        
+        // mapa - плохое название, что в этой мапе лежит? вот так и назови
         HashMap<String, List<String>> mapa = new HashMap<>();
 
         for (int i = 0; i < 10; i++) {
