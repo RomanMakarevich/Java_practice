@@ -1,5 +1,8 @@
 package java_practic.lectures.lecture_24.task_2;
 
+// не забывай форматировать код: code -> reformat code / alt+ctrl+L
+
+// Если arraySecond пустой или состоит из одного элемента, то исключение, решение выглядит неплохо
 public class Task_2_1 {
     public static void main(String[] args) {
         int[] arrayFirst = {1, 3, 4};
@@ -7,6 +10,7 @@ public class Task_2_1 {
 
         int[] newarray = new int[arrayFirst.length + arraySecond.length];
 
+        // назови эти переменные так, чтобы было понятно за что они отвечают
         int j = 0;
         int z = 0;
         int i = 0;
@@ -22,6 +26,8 @@ public class Task_2_1 {
                     i++;
                 }
         }
+        
+        // Arrays.toString()
         for (int index = 0; index < newarray.length; index++) {
             System.out.print(newarray[index] + ", ");
         }
