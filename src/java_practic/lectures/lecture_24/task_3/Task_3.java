@@ -33,6 +33,12 @@ public class Task_3 {
                 .sorted()
                 .collect(Collectors.toList());
 
+        /*
+        List<String> collect = strings.stream()
+                .map(word -> word.replaceAll("\\w", "")) // <- используем regex для замены всех цифр на пустой символ
+                .sorted()
+                .collect(Collectors.toList());
+        */
         System.out.println(sortedList);
     }
 }
